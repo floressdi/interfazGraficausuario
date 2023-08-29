@@ -13,7 +13,7 @@ public class Main {
         String secondNumber = JOptionPane.showInputDialog("Introduzca un numero");
         int seNumber = Integer.parseInt(secondNumber);
 
-        int resuConstante = metodo.mathematicalconstant(seNumber);
+        double resuConstante = metodo.mathematicalconstant(seNumber);
         JOptionPane.showMessageDialog(null, "El resultado es " + (resuConstante), "Constante Matematica", JOptionPane.PLAIN_MESSAGE);
 
     }
