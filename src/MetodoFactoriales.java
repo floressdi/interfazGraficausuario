@@ -7,18 +7,14 @@ public class MetodoFactoriales {
         return store_fact;
     }
 
-    double mathematicalconstant(int c){
+    double mathematicalconstant(double c){
        double e = 0;
-       double b = 1;
-       double convertir = 0;
        for (int a = 1; a<=c; a++){
-           convertir = factCalculator(a);
-           e = b +(b/convertir);
-           e += e;
+           e = e +(1/factCalculator(a));
        }
+       e =e +1;
        return e;
     }
-
     int detectnegative(int p){
         int numeronegativo = -1;
         if(p <0){
@@ -26,4 +22,16 @@ public class MetodoFactoriales {
         }
         return p;
     }
+
+    double calculate_value_ex(int base, int n_terminos){
+        double ex = 0;
+        int resultado_potencia =0 ;
+        for(int i = 1; i <= n_terminos; i++ ){
+            resultado_potencia = (int) Math.pow(base, i);
+            ex += (resultado_potencia/factCalculator(i));
+        }
+        ex = ex +1;
+        return ex;
+    }
 }
+
