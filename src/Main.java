@@ -8,6 +8,7 @@ public class Main {
         campito.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         campito.setSize(350, 300);
         campito.setVisible(true);
+        campito.setLocationRelativeTo(null);
 
         // Factorial de un numero
          //String primerNumero = JOptionPane.showInputDialog("Introduzca el primer entero");

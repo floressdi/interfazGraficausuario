@@ -25,9 +25,9 @@ public class MetodoFactoriales {
 
     double calculate_value_ex(int base, int n_terminos){
         double ex = 0;
-        int resultado_potencia =0 ;
+        double resultado_potencia =0;
         for(int i = 1; i <= n_terminos; i++ ){
-            resultado_potencia = (int) Math.pow(base, i);
+            resultado_potencia = (double) Math.pow(base, i);
             ex += (resultado_potencia/factCalculator(i));
         }
         ex = ex +1;
